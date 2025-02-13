@@ -1,0 +1,914 @@
+/*
+Styling by using element ids
+naming format is "[ComponentName]-[ElementType]-[DescriptiveName]"
+*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+**dpop09** Login.js component styling
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#Login-div-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: #333333;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Login-div-container-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #f7f7f7;
+}
+#Login-div-container-top img {
+  height: 60px;
+  width: 60px;
+}
+#Login-div-container-top h1 {
+  margin: 0;
+  font-size: 32px;
+}
+#Login-form {
+  padding-left: 8em;
+  padding-right: 8em;
+  padding-bottom: 4em;
+  padding-top: 4em;
+}
+#Login-uname,
+#Login-password {
+  background-color: #f7f7f7;
+  border: 2px solid #d0d0d0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+#Login-uname:focus,
+#Login-password:focus {
+  border-color: #d0d0d0;
+  box-shadow: 0 0 8px 0 rgba(124, 186, 174, 0.5);
+}
+#Login-signin-button {
+  background-color: #eed9c4;
+  color: #333333;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#Login-signin-button:hover {
+  background-color: #debea8;
+}
+#Login-div-container-bottom {
+  font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Login-register-link {
+  font-weight: bold;
+  cursor: pointer;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+   **dpop09** Register.js component styling 
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#Register-div-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: #333333;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#Register-div-container-left {
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#Register-button-goback {
+  background-image: url("../images/goback-icon-light.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#Register-button-goback:hover {
+  background-image: url("../images/goback-icon-dark.png"); /* **dpop09** two different shaded images to achieve a darkening effect when hovering over button */
+}
+#Register-div-container-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #d0d0d0; /* **dpop09** slightly darker white than login border so they can match*/
+}
+#Register-div-container-top img {
+  height: 60px;
+  width: 60px;
+}
+#Register-div-container-top h1 {
+  margin: 0;
+  font-size: 32px;
+}
+#Register-form {
+  padding-left: 8em;
+  padding-right: 8em;
+  padding-bottom: 4em;
+  padding-top: 4em;
+}
+#Register-email,
+#Register-uname,
+#Register-password {
+  background-color: #f7f7f7;
+  border: 2px solid #d0d0d0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+#Register-email:focus,
+#Register-uname:focus,
+#Register-password:focus {
+  border-color: #d0d0d0;
+  box-shadow: 0 0 8px 0 rgba(124, 186, 174, 0.5);
+}
+#Register-button {
+  background-color: #eed9c4;
+  color: #333333;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#Register-button:hover {
+  background-color: #debea8;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+**dpop09** Home.js component styling
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#Home-div-container {
+  margin-top: 70px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333333;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#Home-div-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 0;
+  border-bottom: 1px solid #f7f7f7;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+**dpop09** NavBar.js component styling
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#NavBar-nav {
+  background-color: #282828;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #eeece0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#NavBar-nav > h4 {
+  padding: 10px 40px;
+  font-size: larger;
+}
+#NavBar-nav > ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+#NavBar-nav > ul > li {
+  display: inline;
+}
+#NavBar-nav > ul > li > p {
+  padding: 5px 40px;
+  display: inline-block;
+  cursor: pointer;
+}
+#NavBar-nav > ul > li > p:hover {
+  text-shadow: 0.5px 0.5px 0, -0.5px -0.5px 0, 0.5px -0.5px 0, -0.5px 0.5px 0;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+**alh201** Profile.js component styling
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#Profile-div-container{
+  margin-top: 150px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+
+#Profile-div-container-top{
+  margin-top: 70px;
+  position: relative;
+  transform: translateX(-50%);
+  background-color: #333333;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  padding: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#Profile-div-title{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+#Profile-button-logout {
+  background-color: #eed9c4;
+  color: #333333;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+#Profile-button-logout:hover {
+  background-color: #debea8;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+**dpop09** AboutUs.js component styling
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#AboutUs-div-container {
+  margin-top: 70px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333333;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+**dpop09** DiscussionPosts.js component styling
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#DiscussionPosts-div-container {
+  margin: 150px;
+  color: #eeece0;
+}
+#DiscussionPosts-div-container-top {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #eeece0;
+  margin-bottom: 1rem;
+}
+#DiscussionPosts-div-container-top > h1 {
+  font-size: 40px;
+  padding: 0;
+  margin: 2px;
+}
+#DiscussionPosts-div-forums {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+#DiscussionPosts-div-single-forum {
+  background-color: #71714f;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: .5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#DiscussionPosts-div-single-forum:hover {
+  background-color: #8b8b69;
+}
+#DiscussionPosts-p-creator-time {
+  font-size: small;
+  color: #d4d2c6;
+}
+#DiscussionPosts-p-title {
+  font-size: larger;
+  font-weight: bold;
+  color: #eeece0;
+}
+#DiscussionPosts-div-forum-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: .5rem;
+  width: 5rem;
+}
+#DiscussionPosts-div-bottom-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: .5rem;
+  margin-left: 1rem;
+}
+#DiscussionPosts-img-comment {
+  width: 25px;
+  height: 25px;
+  padding-right: 2px;
+}
+#DiscussionPosts-p-num {
+  font-size: medium;
+  color: #d4d2c6;
+  margin: 0;
+  padding: 0;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+**dpop09** Post.js component styling
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#Post-div-container {
+  margin: 150px;
+  color: #eeece0;
+}
+#Post-div-container-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+#Post-div-container-top > h1 {
+  font-size: 40px;
+  padding: 0;
+  margin: 2px;
+}
+#Home-h1-Most-Recommended-title {
+  font-size: 40px;
+  padding-top: 2rem;
+  color: white;
+}
+#Post-form {
+  width: 100%;
+  height: 100%;
+}
+#Post-label {
+  font-size: large;
+}
+#Post-input-title, #Post-input-content {
+  background-color: #f7f7f7;
+  border: 2px solid #d0d0d0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+#Post-button-submit {
+  background-color: #d0d0d0;
+  color: #333333;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+**KirstenO09** BookOfTheMonth.js component styling
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.book-of-month-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the start (top) of the container */
+  background: url('../images/trees1.jpg') center center fixed;
+  padding: 30px;
+}
+
+.header-container {
+  margin: 20px; /* Add margin for spacing between header and content */
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  align-items: flex-start; /* Align items at the start (top) of the container */
+}
+
+.image-container {
+  flex: 0 0 25%; /* Adjust the width as needed */
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+
+#book-of-month-img {
+  flex: 0 0 25%; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.article {
+  margin-top: 90px;
+  margin-left: 50px; /* Take remaining space on the right */
+  margin-right: 40px;
+  padding: 30px;
+  background-color: rgba(236, 240, 241, 0.6); /* Use RGBA for background color with transparency */
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .image-container {
+    flex: 1; /* Full width in a column layout */
+  }
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+**KirstenO09** HomeInfo.js component styling
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.home-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the start (top) of the container */
+  background-color: #C0C0B4;
+  padding: 30px;
+  border-bottom: 1px solid #f7f7f7;
+}
+.discussion-info-container {
+  padding: 20px; /* Add margin for spacing between header and content */
+  text-align: center;
+}
+.post-info-container {
+  padding: 20px; /* Add margin for spacing between header and content */
+  text-align: center;
+  border-left: 1px solid #979781;
+  border-right: 1px solid #979781;
+}
+.eventcal-info-container{
+  padding: 20px; /* Add margin for spacing between header and content */
+  text-align: center;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+**KirstenO09** slider.js component styling
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.slider-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the start (top) of the container */
+  background-color: #717164;
+  width: 100%;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.slider{
+  width: 930px;
+  display: flex;
+  overflow-x: scroll;
+  background-color: #C0C0B4;
+  grid-gap: 46px;
+  margin-left: 20px;
+  margin-top: -100px;
+}
+
+.slider div{
+  width: 82%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 46px;
+  padding: 46px;
+  flex: none;
+}
+
+.slider div img{
+  width: 100%;
+  grid-gap: 47px;
+}
+.slider::-webkit-scrollbar{
+  display: none;
+}
+.slider-wrap{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto; 
+}
+.slider-header {
+  text-align: center;
+  font-size: large;
+  color: white;
+  background-color: #717164;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.slider div img:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#book1-img {
+  height: 350px;
+  width: 250px; 
+  flex: 0 0 25%; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+#book2-img {
+  height: 350px;
+  width: 250px; 
+  flex: 0 0 25%; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+#book3-img {
+  height: 350px;
+  width: 250px; 
+  flex: 0 0 25%; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  
+}
+#book4-img {
+  height: 350px;
+  width: 250px; 
+  flex: 0 0 25%; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+#book5-img {
+  height: 350px;
+  width: 250px; 
+  flex: 0 0 25%; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+#book6-img {
+  height: 350px;
+  width: 250px; 
+  flex: 0 0 25%; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+#book7-img {
+  height: 350px;
+  width: 250px; 
+  flex: 0 0 25%; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+#book8-img {
+  height: 350px;
+  width: 250px; 
+  flex: 0 0 25%; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+#book9-img {
+  height: 350px;
+  width: 250px; 
+  flex: 0 0 25%; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  margin-right: 45px;
+}
+#back-img {
+  margin-right: 1px;
+  margin-left: 30px;
+  margin-top: -100px;
+}
+#next-img {
+  margin-left: 20px;
+  margin-right: 50px;
+  margin-top: -100px;
+}
+#back-img,
+#next-img {
+  background-color: #D5D5CD;
+  border-radius: 50%; /* Makes the background circular */
+  padding: 10px; /* Adjust padding as needed */
+  
+  transition: transform 0.3s ease; /* Smooth transition effect for transform */
+}
+#back-img img,
+#next-img img {
+  display: block; 
+}
+#back-img:hover,
+#next-img:hover {
+  background-color: #FFFFFF; /* Change the background color on hover */
+  transform: scale(1.1); /* Zoom in by 10% on hover (adjust the scale factor as needed) */
+}
+
+.calendar-container {
+  position: relative;
+  padding: 20px; 
+  margin-top: 170px;
+  justify-content: flex-end;
+  height: 650px;
+}
+.header-container {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin-top: 10px;
+  z-index: 1;
+  border-bottom: 2px solid #fff;
+}
+
+.rbc-calendar {
+  background-color: #f5f9f5; 
+  border: 1px solid #fbfbfb; 
+  border-radius: 5px; 
+  margin-left: 22%;
+  margin-top: -50px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+
+}
+
+.rbc-event {
+  background-color: #000080 !important; 
+  border: 1px solid #000080 !important; 
+  color: #fff; 
+  padding:2px !important;
+  height: 40px; 
+  width: 90%; 
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+  margin-bottom: px;
+  font-size: 8px;
+}
+
+.event-title {
+  font-weight: bold !important;
+  margin: 0;
+}
+
+.event-time {
+  margin: 10px 0 0 0;
+}
+
+.rbc-toolbar {
+  margin-bottom: 20px; 
+}
+
+.rbc-toolbar button {
+  background-color: #007bff; 
+  color: #fff; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 8px 12px; 
+  margin-right: 10px; 
+}
+.rbc-toolbar-label {
+  color: #000000; 
+  text-align: center !important;
+}
+
+.rbc-toolbar button:last-child {
+  margin-right: 0; 
+}
+.rbc-header {
+  background-color: #ADD8E6;
+  color: #070606;
+}
+.rbc-date-cell {
+  background-color: #ADD8E6;
+  color: #070606;
+}
+
+.dialog {
+  position: absolute;
+  top: 30%; 
+  left: 8px; 
+  width: 250px; 
+  height: 300px;
+  background-color: #333333; 
+  border: 1px solid #333333; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px; 
+  border-radius: 5px; 
+}
+
+.dialog input, .dialog button {
+  margin-bottom: 15px;
+}
+
+.create-event-button, .save-button, .cancel-button {
+  background-color: #000080; 
+  color: #fff; 
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  margin-bottom: 10px; 
+}
+
+.dialog button.save {
+  background-color: #28a745;
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  margin-bottom: 10px; 
+}
+
+.dialog button.cancel {
+  background-color: #dc3545; 
+  margin-left: 10px;
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  margin-bottom: 10px; 
+}
+
+.dialog button:hover {
+background-color: #fff;
+}
+
+.popover {
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333333;
+  border: 1px solid #333333;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.popover h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.popover p {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.popover .delete-button {
+  background-color: #007bff;
+  color: #fff;
+  margin-left: 10px;
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  margin-bottom: 10px; 
+}
+
+.popover .cancel-button {
+  background-color: #dc3545;
+  margin-left: 10px;
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  margin-bottom: 10px; 
+}
+
+.popover button:hover {
+  background-color: #fff; 
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+**dpop09** Forum.js component styling
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#Forum-div-container {
+  margin: 150px;
+  color: #eeece0;
+}
+#Forum-div-post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-bottom: 2px solid #eeece0;
+  margin-bottom: 1rem;
+}
+#Forum-div-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-self: start;
+  margin-bottom: .5rem;
+}
+#Forum-div-likes {
+  display: flex;
+  flex-direction: row;
+  margin-right: 1rem;
+}
+#Forum-div-comments {
+  display: flex;
+  flex-direction: row;
+}
+#Forum-img-comment {
+  width: 25px;
+  height: 25px;
+  padding-right: 2px;
+}
+#Forum-p-num {
+  font-size: medium;
+  color: #d4d2c6;
+  margin: 0;
+  padding: 0;
+}
+#Forum-div-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+#Forum-button-like {
+  margin-right: 1rem;
+}
+#Forum-div-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border: 1px solid #D5D5CD;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #444;
+}
+#Forum-div-comment-header-flexbox {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  color: #d0d0d0;
+}
+#Forum-p-commenter {
+  margin-right: 1rem;
+}
+#Forum-p-comment-content {
+  font-size: 17px;
+}
+
+#Recommend-div-container {
+  margin: 150px;
+  color: #eeece0;
+}
+#Recommend-div-container-top {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #eeece0;
+  margin-bottom: 1rem;
+}
+#Recommend-div-container-top > h1 {
+  font-size: 40px;
+  padding: 0;
+  margin: 2px;
+}
+#Recommend-card-image {
+  height: 100px;
+  width: 100px;
+}
